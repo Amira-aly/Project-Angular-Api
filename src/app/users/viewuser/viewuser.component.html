@@ -1,0 +1,26 @@
+<div class="contianer" >
+  <h1>Show User</h1>
+  <div class="card text-center">
+      <div class="coon">
+      <div class="card-header">
+          <img [src]="user.img" class="card-img-top" alt="user">
+      </div>
+      <div class="card-body">
+        <h2>Name : {{user.name}}</h2>
+        <h2>Email : {{user.email}}</h2>
+        <h3>Phone : {{user.phone}}</h3>
+        <p class="card-text">Address : {{user.address}} </p>
+      </div>
+      </div>
+  </div>
+
+  <div class="bttn">
+      <a routerLink="/all_users" class="btn btn-info">Back</a>
+      <a routerLink="/update_user/{{user.id}}" class="btn btn-success">Edite</a>
+      <a (click)="remove(user.id)" class="btn btn-danger">Delete</a>
+      <a routerLink="/create_user" class="btn btn-primary">Add User</a>
+  </div>
+      
+  
+</div>
+

@@ -1,0 +1,27 @@
+<div class="contianer" >
+    <h1>Show Task</h1>
+    <div class="card text-center">
+        <div class="coon">
+        <div class="card-header">
+            <h2> {{task.titleTask}}</h2>
+        </div>
+        <div class="card-body">
+          <p class="card-text"> {{task.badyTask}}</p>
+        </div>
+        <div class="card-footer text-muted">
+            {{task.date}} // {{task.location}}
+        </div>
+        
+        </div>
+    </div>
+
+    <div class="bttn">
+        <a routerLink="/all_tasks" class="btn btn-info">Back</a>
+        <a routerLink="/update_task/{{task.id}}" class="btn btn-success">Edite</a>
+        <a (click)="remove(task.id)" class="btn btn-danger">Delete</a>
+        <a routerLink="/create_task" class="btn btn-primary">Add Task</a>
+    </div>
+        
+    
+</div>
+

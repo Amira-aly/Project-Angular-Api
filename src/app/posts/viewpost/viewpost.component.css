@@ -1,0 +1,43 @@
+.card{
+  width: 62%;
+  margin: auto;
+  position: inherit;
+}
+h1{
+  text-align: center;
+  color: var(--bg-active);
+  padding: 30px;
+}
+img.card-img-top {
+  width: 25%;
+  height: 100%;
+  border-radius: 68%;
+}
+.contianer{
+  border-radius: 5px;
+  padding-top: 80px;
+}
+
+.bttn {
+  text-align: center;
+  padding: 20px;
+}
+a{
+  margin: 2px;
+}
+
+@media (max-width:850px) {
+  .card{
+    width: 80%;
+    margin: auto;
+    position: inherit;
+  }
+  h1{
+    text-align: center;
+    color: var(--bg-active);
+  }
+  .contianer{
+    border-radius: 5px;
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+<div class="contianer" >
+    <h1>Show Post</h1>
+    <div class="card text-center">
+        <div class="coon">
+        <div class="card-header">
+            <h2> {{post.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p class="card-text"> {{post.body}}</p>
+        </div>
+        
+        
+        </div>
+    </div>
+
+    <div class="bttn">
+        <a routerLink="/all_posts" class="btn btn-info">Back</a>
+        <a routerLink="/update_post/{{post.id}}" class="btn btn-success">Edite</a>
+        <a (click)="remove(post.id)" class="btn btn-danger">Delete</a>
+        <a routerLink="/create_post" class="btn btn-primary">Add Post</a>
+    </div>
+        
+    
+</div>
+

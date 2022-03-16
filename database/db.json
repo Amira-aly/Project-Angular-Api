@@ -1,0 +1,202 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "mohamed",
+      "email": "mohamed@yahoo.com",
+      "address": "address",
+      "phone": "01102298765",
+      "img": "https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+    },
+    {
+      "id": 2,
+      "name": "marwa",
+      "email": "marwa@yahoo.com",
+      "address": "address",
+      "phone": "01102298765",
+      "img": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+    },
+    {
+      "id": 4,
+      "name": "abdoo",
+      "email": "abdo@yahoo.com",
+      "address": "address",
+      "phone": "01102298765",
+      "img": "https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=60"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "titleddddddddd",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 3,
+      "title": "title",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "title": "wvwerg",
+      "body": "fdbdfh",
+      "id": 4
+    },
+    {
+      "title": "fvdfgver",
+      "body": "ergergerg",
+      "id": 5
+    },
+    {
+      "title": ",m j njk",
+      "body": "lkjnkljnj",
+      "id": 6
+    },
+    {
+      "title": "kjnji",
+      "body": "kjnjknj",
+      "id": 7
+    }
+  ],
+  "tasks": [
+    {
+      "titleTask": "tasksssss",
+      "date": "2022-03-24",
+      "location": "cairo",
+      "id": 1,
+      "badyTask": "igbbuuffffffffffffffffffffff"
+    },
+    {
+      "id": 5,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 8,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 9,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 10,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 11,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 12,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 13,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 14,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 15,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 16,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 17,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 18,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 19,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 20,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 21,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 22,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 23,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "id": 24,
+      "titleTask": "title tasks",
+      "badyTask": "bady tasks",
+      "date": "1/1/2020",
+      "location": "cairo"
+    },
+    {
+      "titleTask": "kjj",
+      "badyTask": "m  hbh",
+      "date": "2022-04-01",
+      "location": "cairo",
+      "id": 25
+    }
+  ]
+}

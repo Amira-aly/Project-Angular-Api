@@ -1,0 +1,27 @@
+<div class="container" >
+    <h3>Create Post</h3>
+    <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label >title</label>
+      </div>
+      <div class="col-75">
+        <input type="text" [(ngModel)]="Object.title" name="title" #title="ngModel" placeholder="Write title..">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label >Subject</label>
+        </div>
+        <div class="col-75">
+            <textarea [(ngModel)]="Object.body" name="body" #body="ngModel" placeholder="Write subject.." style="height:200px"></textarea>
+          </div>
+    </div>
+    <br>
+    <div class="row">
+      <input type="submit" (click)="send()" value="Add Post">
+    </div>
+    <div class="clear"></div>
+    </form>
+  </div>
+

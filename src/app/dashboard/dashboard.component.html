@@ -1,0 +1,72 @@
+<nav>
+    <span class="xicon material-icons-sharp">
+        signpost
+    </span>
+    <span class="xicon material-icons-sharp">
+        mail
+    </span>
+    
+    <img src="/assets/img/admin.jpg" alt="">
+</nav>
+<h1 class="had">DashBoard</h1>
+<div class="con">
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+            <div class="imgs">
+                <div class="banner" >
+                    <span class="icon material-icons-sharp">person</span>
+                    <h4>Users</h4>
+                    <h5 >150</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+            <div class="imgs">
+                <div class="banner">
+                    <span class="icon material-icons-sharp">mode_comment</span>
+                    <h4>Posts</h4>
+                    <h5 >250</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+            <div class="imgs">
+                <div class="banner">
+                    <span class="icon material-icons-sharp">event_note</span>
+                    <h4>Tasks</h4>
+                    <h5 >350</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="contianer">
+    <h3>Users</h3>
+<div class="container">
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Action <a style="padding: 2px;" routerLink="/create_user"><span class="icon material-icons-sharp">person_add_alt</span></a> </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of allData">
+            <td><img [src]="data.img" alt="" id="imgg">{{data.name}}</td>    
+            <td>
+              <button type="button" class="btn btn-primary" routerLink="/view_user/{{data.id}}" >Show Data</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+</div>
+
+
+
+
+

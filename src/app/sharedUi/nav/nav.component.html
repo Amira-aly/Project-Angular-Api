@@ -1,0 +1,81 @@
+<header>
+    <div class="toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+    <h3>Dashboard</h3>
+    <a routerLink="/dashboard">
+        <i class="fas fa-sign-out-alt"></i>
+    </a>
+</header>
+<nav>
+    <ul>
+        <li>
+            <a class="toggle" routerLink="/dashboard">
+                <span class="icon material-icons-sharp">home</span>
+                <span class="title">Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/all_users">
+                <span class="icon material-icons-sharp">person</span>
+                <span class="title">Users</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/create_user">
+                <span class="icon material-icons-sharp">person_add_alt</span>
+                <span class="title">Add User</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/all_posts">
+                <span class="icon material-icons-sharp">mode_comment</span>
+                <span class="title">Posts</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/create_post">
+                <span class="icon material-icons-sharp">add</span>
+                <span class="title">Add Post</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/all_tasks">
+                <span class="icon material-icons-sharp">event_note</span>
+                <span class="title">Tasks</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/create_task">
+                <span class="icon material-icons-sharp">add</span>
+                <span class="title">Add Task</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+<div class="media">
+    <a  routerLink="/dashboard">
+        <span class="icon material-icons-sharp">home</span>
+    </a>
+    <a routerLink="/all_users">
+        <span class="icon material-icons-sharp">person</span>  
+    </a>
+    <a routerLink="/all_posts">
+        <span class="icon material-icons-sharp">mode_comment</span>
+        
+    </a>
+    <a routerLink="/all_tasks">
+        <span class="icon material-icons-sharp">event_note</span>
+        
+    </a>
+</div>
+<script>
+    var getSidebar = document.querySelector('nav');
+var getToggle = document.getElementsByClassName('toggle');
+for (var i = 0; i <= getToggle.length; i++) {
+    getToggle[i].addEventListener('click', function () {
+        getSidebar.classList.toggle('active');
+    });
+}
+</script>

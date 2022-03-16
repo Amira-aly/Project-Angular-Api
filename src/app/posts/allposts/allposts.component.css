@@ -1,0 +1,36 @@
+.container{
+    margin-bottom: 30px;
+}
+.table-dark {
+    color: #fff;
+    background-color: #343a40;
+    width: 87%;
+    margin: auto;
+}
+h3{
+    text-align: center;
+    color: var(--bg-active);
+    padding: 30px;
+}
+a{
+    color: var(--bg-active);
+    text-decoration: none;
+}
+#a{
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+a:hover{
+    color: #454b91;
+}
+@media (max-width:750px){
+    a,button{
+        margin: 2px;
+    }
+}

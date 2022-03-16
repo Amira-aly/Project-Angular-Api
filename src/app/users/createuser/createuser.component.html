@@ -1,0 +1,50 @@
+<div class="container" >
+    <h3>Create User</h3>
+    <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label > Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" [(ngModel)]="Object.name" name="name" #name="ngModel" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label >Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email" [(ngModel)]="Object.email" name="email" #email="ngModel" placeholder="Your email..">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label >Address</label>
+        </div>
+        <div class="col-75">
+          <input type="text" [(ngModel)]="Object.address" name="address" #adrress="ngModel" placeholder="Your address..">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label >Phone</label>
+        </div>
+        <div class="col-75">
+          <input type="text" [(ngModel)]="Object.phone" name="phone" #phone="ngModel" placeholder="Your phone..">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label >Img</label>
+        </div>
+        <div class="col-75">
+          <input type="url" [(ngModel)]="Object.img" name="img" #img="ngModel" placeholder="Your url img..">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+      <input type="submit" (click)="send()" value="Add User">
+    </div>
+    <div class="clear"></div>
+    </form>
+  </div>

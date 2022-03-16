@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --bg-primary: #41444b;
+    --bg-secondary: #52575d;
+    --bg-active:#6770d2 ;
+    --cl-text: #f6f4e6;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    min-height: 100vh;
+    background: white;
+    
+}
+.clear{
+    clear: both;
+}

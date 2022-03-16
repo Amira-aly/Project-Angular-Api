@@ -1,0 +1,30 @@
+<h3>All Tasks</h3>
+
+<div class="container">
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">date</th>
+            <th scope="col">Action </th>
+            <th>
+              <a routerLink="/create_task"><span class="icon material-icons-sharp">add</span></a>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of allData">
+            <th scope="row">{{ data.id }}</th>
+            <td>{{data.titleTask}}</td>
+            <td>{{data.date}}</td>
+            <td>
+              <button type="button" class="btn btn-primary" routerLink="/view_task/{{data.id}}">Show Data</button>
+              <a id="a" routerLink="/update_task/{{data.id}}" style="margin-left:5px;" class="btn btn-Success" >Edite</a>
+              <button type="button" (click)="remove(data.id)" class="btn btn-danger" style="margin-left:5px;">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
