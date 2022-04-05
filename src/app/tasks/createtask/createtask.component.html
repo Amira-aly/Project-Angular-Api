@@ -3,41 +3,41 @@
     <form action="/action_page.php">
     <div class="row">
       <div class="col-25">
-        <label > Title</label>
+        <label > Title  <span style="color: red;"> : {{invalidMessage}}</span></label>
       </div>
       <div class="col-75">
-        <input type="text" [(ngModel)]="Object.titleTask" name="titleTask" #titleTask="ngModel" placeholder="Write title..">
+        <input type="text" [(ngModel)]="Object.titleTask" name="titleTask" #titleTask="ngModel" placeholder="Write title.." required>
       </div>
     </div>
     <div class="row">
         <div class="col-25">
-          <label >Subject</label>
+          <label >Subject  <span style="color: red;"> : {{invalidMessage}}</span></label>
         </div>
         <div class="col-75">
-            <textarea [(ngModel)]="Object.badyTask" name="badyTask" #badyTask="ngModel" placeholder="Write subject.." style="height:200px"></textarea>
+            <textarea [(ngModel)]="Object.badyTask" name="badyTask" #badyTask="ngModel" placeholder="Write subject.." style="height:200px" required></textarea>
           </div>
     </div>
     <div class="row">
         <div class="col-25">
-          <label >Date</label>
+          <label >Date <span style="color: red;"> : {{invalidMessage}}</span></label>
         </div>
         <div class="col-75">
-          <input type="date" [(ngModel)]="Object.date" name="date" #date="ngModel" required pattern="\d{4}-\d{2}-\d{2}">
+          <input type="date" [(ngModel)]="Object.date" name="date" #date="ngModel" required pattern="\d{4}-\d{2}-\d{2}" required>
         </div>
     </div>
     <div class="row">
         <div class="col-25">
-          <label >Loction</label>
+          <label >Loction <span style="color: red;"> : {{invalidMessage}}</span></label>
         </div>
         <div class="col-75">
-          <input type="text" [(ngModel)]="Object.location" name="location" #location="ngModel" placeholder="Your loction..">
+          <input type="text" [(ngModel)]="Object.location" name="location" #location="ngModel" placeholder="Your loction.." required>
         </div>
     </div>
 
     
     <br>
     <div class="row">
-      <input type="submit" (click)="send()" value="Add Task">
+      <input type="submit" (click)="send(titleTask , badyTask ,date,location)" value="Add Task">
     </div>
     <div class="clear"></div>
     </form>

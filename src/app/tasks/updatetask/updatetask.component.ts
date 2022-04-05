@@ -9,7 +9,7 @@ import { TaskfunctionService } from 'src/app/services/taskfunction.service';
   styleUrls: ['./updatetask.component.css']
 })
 export class UpdatetaskComponent implements OnInit {
-
+  invalidMessage :any;
   Object = new tasks();  
   id:any;
   constructor(private ser:TaskfunctionService, private router: Router,
@@ -24,10 +24,14 @@ export class UpdatetaskComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  send(){
-    return this.ser.put(this.id, this.Object).subscribe(data=> {
-      this.router.navigateByUrl('/all_tasks')
-    })
+  send(titleTask:any , badyTask:any ,date:any ,location:any) : any{
+    if(titleTask.errors == null && badyTask.errors == null  && date.errors == null  && location.errors == null){
+      return this.ser.put(this.id, this.Object).subscribe(data=> {
+        this.router.navigateByUrl('/all_tasks')
+      })
+    }else{
+      this.invalidMessage = "This Input Is Required"
+    }
   }
 
 }

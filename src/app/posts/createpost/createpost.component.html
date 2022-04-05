@@ -1,25 +1,28 @@
 <div class="container" >
     <h3>Create Post</h3>
-    <form action="/action_page.php">
+    <form >
     <div class="row">
       <div class="col-25">
-        <label >title</label>
+        <label >title  <span style="color: red;"> : {{invalidMessage}}</span></label>
       </div>
       <div class="col-75">
-        <input type="text" [(ngModel)]="Object.title" name="title" #title="ngModel" placeholder="Write title..">
+        <input type="text" class="form-control" [(ngModel)]="Object.title" name="title" #title="ngModel" placeholder="Write title.." required  >
+        
       </div>
     </div>
     <div class="row">
         <div class="col-25">
-          <label >Subject</label>
+          <label >Subject <span style="color: red;"> : {{invalidMessage}}</span></label>
         </div>
         <div class="col-75">
-            <textarea [(ngModel)]="Object.body" name="body" #body="ngModel" placeholder="Write subject.." style="height:200px"></textarea>
-          </div>
+          <textarea required class="form-control" [(ngModel)]="Object.body" name="body"  #body="ngModel" placeholder="Write subject.." style="height:200px" ></textarea>
+          
+        </div>
+        
     </div>
     <br>
     <div class="row">
-      <input type="submit" (click)="send()" value="Add Post">
+      <input type="submit" (click)="send(title,body)" value="Add Post">
     </div>
     <div class="clear"></div>
     </form>

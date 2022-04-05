@@ -10,6 +10,7 @@ import { PostfunctionService } from 'src/app/services/postfunction.service';
 })
 export class UpdatepostComponent implements OnInit {
   [x: string]: any;
+  invalidMessage :any;
 
   Object = new posts();  
   id : any;
@@ -25,10 +26,14 @@ export class UpdatepostComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  send(){
-    return this.ser.put(this.id, this.Object).subscribe(data=> {
-      this.router.navigateByUrl('/all_posts')
-    })
+  send(title:any , body:any) : any{
+    if(title.errors == null && body.errors == null){
+      return this.ser.put(this.id, this.Object).subscribe(data=> {
+        this.router.navigateByUrl('/all_posts')
+      })
+    }else{
+      this.invalidMessage = "This Input Is Required"
+    }
   }
 
 }

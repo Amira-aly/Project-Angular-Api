@@ -3,47 +3,47 @@
     <form >
     <div class="row">
       <div class="col-25">
-        <label > Name</label>
+        <label > Name <span style="color: red;"> : {{invalidMessage}}</span></label>
       </div>
       <div class="col-75">
-        <input type="text" [(ngModel)]="Object.name" name="name" #name="ngModel" placeholder="Your name..">
+        <input type="text" [(ngModel)]="Object.name" name="name" #name="ngModel" placeholder="Your name.." required>
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label >Email</label>
+        <label >Email <span style="color: red;"> : {{invalidMessage}}</span></label>
       </div>
       <div class="col-75">
-        <input type="email" [(ngModel)]="Object.email" name="email" #email="ngModel" placeholder="Your email..">
+        <input type="email" [(ngModel)]="Object.email" name="email" #email="ngModel" placeholder="Your email.." required>
       </div>
     </div>
     <div class="row">
         <div class="col-25">
-          <label >Address</label>
+          <label >Address <span style="color: red;"> : {{invalidMessage}}</span></label>
         </div>
         <div class="col-75">
-          <input type="text" [(ngModel)]="Object.address" name="address" #adrress="ngModel" placeholder="Your address..">
+          <input type="text" [(ngModel)]="Object.address" name="address" #adrress="ngModel" placeholder="Your address.." required>
         </div>
     </div>
     <div class="row">
         <div class="col-25">
-          <label >Phone</label>
+          <label >Phone <span style="color: red;"> : {{invalidMessage}}</span></label>
         </div>
         <div class="col-75">
-          <input type="text" [(ngModel)]="Object.phone" name="phone" #phone="ngModel" placeholder="Your phone..">
+          <input type="text" [(ngModel)]="Object.phone" name="phone" #phone="ngModel" placeholder="Your phone.." required>
         </div>
     </div>
     <div class="row">
         <div class="col-25">
-          <label >Img</label>
+          <label >Img <span style="color: red;"> : {{invalidMessage}}</span></label>
         </div>
         <div class="col-75">
-          <input type="url" [(ngModel)]="Object.img" name="img" #img="ngModel" placeholder="Your url img..">
+          <input type="url" [(ngModel)]="Object.img" name="img" #img="ngModel" placeholder="Your url img.." required>
         </div>
     </div>
     <br>
     <div class="row">
-      <input type="submit" (click)="send()" value="Update user">
+      <input type="submit" (click)="send(name,email,adrress,phone,img)" value="Update user">
     </div>
     <div class="clear"></div>
     </form>

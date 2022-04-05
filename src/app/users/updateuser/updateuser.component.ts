@@ -10,6 +10,7 @@ import { UserfunctionService } from 'src/app/services/userfunction.service';
 })
 export class UpdateuserComponent implements OnInit {
 
+  invalidMessage :any;
   Object = new users();  
   id: any;
   constructor(private ser:UserfunctionService, private router: Router,
@@ -24,10 +25,14 @@ export class UpdateuserComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  send(){
-    return this.ser.put(this.id,this.Object).subscribe(data=> {
-      this.router.navigateByUrl('/all_users')
-    })
+  send(name:any,email:any,adrress:any,phone:any,img:any):any{
+    if(name.errors == null && email.errors == null  && adrress.errors == null  && phone.errors == null && img.errors == null){
+      return this.ser.put(this.id,this.Object).subscribe(data=> {
+        this.router.navigateByUrl('/all_users')
+      })
+    }else{
+      this.invalidMessage = "This Input Is Required"
+    }
   }
 
 }
